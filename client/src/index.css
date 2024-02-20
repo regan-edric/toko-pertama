@@ -26,3 +26,22 @@ code {
 #navbar li{
   padding: 0 20px;
 }
+
+#navbar li a{
+  transition: 0.3s ease;
+}
+
+#navbar li a:hover,
+#navbar li a.active{
+  color: #088178;
+}
+
+#navbar li a.active::after{
+  content: "";
+  width: 30%;
+  height: 2px;
+  position: absolute;
+  background: #088178;
+  bottom: -4px;
+  left: 20px;
+}
